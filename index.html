@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tax Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sub-container">
+        <div class="content">
+          <div class="sub-content">
+            <div class="sub-content-container">
+              <h4 class="input-box-heading">
+                Enter gross annual income
+                <span class="info-box" id="info-box-1">
+                  <span class="info-text">Gross annual <br/>income is your total <br/>salary in a year <br/>before any deductions</span>
+                  <i class="fa-solid fa-circle-info info-icon"></i>
+                </span>
+                
+              </h4>
+              <input
+                class="input-box"
+                id="gross-income"
+                type="text"
+                placeholder="Enter gross annual income"
+              />
+            </div>
+            <span class="error-icon-pos">
+              <div class="error-icon-box">
+                <span class="caution-text">Please enter numbers only</span>
+                <i class="fa-solid fa-circle-exclamation error-icon"></i>
+              </div>
+            </span>
+          </div>
+          <div class="sub-content" style="margin-top: -1.5rem">
+            <div class="sub-content-container">
+              <h4 class="input-box-heading">
+                Enter extra income
+                <span class="info-box" id="info-box-2">
+                  <span class="info-text">Extra income <br/>is your earnings <br/>from other sources</span>
+                  <i class="fa-solid fa-circle-info info-icon"></i>
+                </span>
+              </h4>
+              <input
+                class="input-box"
+                id="extra-income"
+                type="text"
+                placeholder="Enter extra income"
+              />
+            </div>
+            <span class="error-icon-pos">
+              <div class="error-icon-box">
+                <span class="caution-text">Please enter numbers only</span>
+                <i class="fa-solid fa-circle-exclamation error-icon"></i>
+              </div>
+            </span>
+          </div>
+          <div class="sub-content" style="margin-top: -1.5rem">
+            <div class="sub-content-container">
+              <h4 class="input-box-heading">
+                Enter your age
+                <span class="info-box" id="info-box-3">
+                  <span class="info-text">Yout current age</span>
+                  <i class="fa-solid fa-circle-info info-icon"></i>
+                </span>
+              </h4>
+              <input
+                class="input-box"
+                id="age"
+                type="text"
+                placeholder="Enter your age"
+              />
+            </div>
+            <span class="error-icon-pos">
+              <div class="error-icon-box">
+                <span class="caution-text">Please enter numbers only</span>
+                <i class="fa-solid fa-circle-exclamation error-icon"></i>
+              </div>
+            </span>
+          </div>
+          <div class="sub-content" style="margin-top: -1.5rem">
+            <div class="sub-content-container">
+              <h4 class="input-box-heading">
+                Enter total applicable deductions
+                <span class="info-box" id="info-box-4">
+                  <span class="info-text">It is the sum of all <br/>eligible expenses or <br/>allowances that can <br/>be subtracted from <br/>taxable income to <br/>reduce the overall <br/>tax liability.</span>
+                  <i class="fa-solid fa-circle-info info-icon"></i>
+                </span>
+              </h4>
+              <input
+                class="input-box"
+                id="total-deductions"
+                type="text"
+                placeholder="Enter total applicable deductions"
+              />
+            </div>
+            <span class="error-icon-pos">
+              <div class="error-icon-box">
+                <span class="caution-text">Please enter numbers only</span>
+                <i class="fa-solid fa-circle-exclamation error-icon"></i>
+              </div>
+            </span>
+          </div>
+          <button type="submit" class="input-box submit-button" id="submit">
+            Submit
+          </button>
+        </div>
+      </div>
+      <div class="submit-sub-container hidden" id="submit-div">
+        <div class="submit-content">
+          <h2 id="starting-line"></h2>
+          <h2 id="total-income" style="margin-top: -0.5vw"></h2>
+          <p style="margin-top: -0.5vw" id="ending-line"></p>
+          <button
+            type="submit"
+            class="submit-input-box close-button"
+            id="close"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

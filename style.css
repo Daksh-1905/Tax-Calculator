@@ -1,0 +1,164 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.sub-container{
+    margin-top: 8vw;
+    width: 30vw;
+    height: 60vh;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+}
+.sub-content{
+    display: flex;
+    /* flex-direction: column; */
+    
+}
+
+.sub-content-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box{
+    width: 25vw;
+    height: 3vh;
+    margin-left: 1.5rem;
+    margin-top: -1rem;
+    border: 1.6px solid gray;
+    /* display: inline-block;
+    position: relative; */
+}
+
+/* .input-box:after {
+    position: absolute;
+    right: 6px;
+    font-family: 'FontAwesome';
+    content: '\f274';
+ } */
+
+.submit-button{
+    margin-top: 2rem; 
+    width: 25.5vw; 
+    height: 2vw;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+}
+.submit-button:hover{
+    background-color:  rgb(104, 33, 170);
+}
+.input-box-heading{
+    font-family: 'Ubuntu';
+    margin-top: 4rem; 
+    margin-left: 1.5rem;
+    color: gray;
+    display: flex;
+}
+
+.submit-sub-container{
+    position: absolute;
+    margin-top: 8vw;
+    width: 50vw;
+    height: 50vh;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.submit-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vw;
+    font-family: 'Ubuntu'; 
+    color: gray;
+}
+.hidden{
+    display: none;
+}
+
+.close-button{
+    margin-top: 4vw; 
+    width: 5vw; 
+    height: 2.5vw;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+}
+.close-button:hover{
+    background-color:  rgb(104, 33, 170);
+}
+
+.error-icon-pos{
+    margin-top: -0.8rem;
+    margin-left: -1.5rem;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+input::placeholder{
+    padding: 5px;
+}
+
+.error-icon-box{
+    display: flex; 
+    flex-direction: column;
+    margin-top: 2rem;
+    /* justify-content: center; rgb(230, 225, 225)*/
+}
+
+.caution-text{
+    width: 10rem;
+    background-color: rgb(255, 0, 0);
+    color: aliceblue;
+    font-family: 'Ubuntu';
+    padding: 3px;
+    border-radius: 3px;
+    margin-left: -0.1rem;
+    margin-bottom: 0.2rem;
+}
+
+.info-box{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+    
+}
+
+.info-text {
+    color: black;
+    background-color: rgb(239, 235, 235);
+    opacity: 0;
+    font-size: 12px;
+    padding: 4px;
+    transition: opacity 0.4s;
+}
+
+#info-box-1{
+    margin-top: -3.8rem;
+}
+
+#info-box-2{
+    margin-top: -2.9rem;
+}
+
+#info-box-3{
+    margin-top: -1.2rem;
+}
+
+#info-box-4{
+    margin-top: -6.3rem;
+}
+
+.info-icon{
+    width: 1vw;
+}
